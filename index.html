@@ -1,0 +1,20 @@
+<html>
+<head>
+</head>
+<body>
+    <div>
+        <button id="sub">-</button>
+        <input type="text" value="0" id="number">
+        <button id="add">+</button>
+    </div>
+    <script>
+        // バージョン 1
+        var input = document.querySelector("#number");
+        document.querySelector("#add").addEventListener("click", function () {
+            input.value = ~~input.value + 1
+        });
+        document.querySelector("#sub").addEventListener("click", function () {
+            input.value = ~~input.value - 1
+        });
+    </script>
+</body>
